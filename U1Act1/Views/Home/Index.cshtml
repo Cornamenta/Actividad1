@@ -1,0 +1,28 @@
+﻿@model U1Act1.Models.PerfilViewModel
+<html>
+	<head>
+		<title>Mi perfil</title>
+	</head>
+	<body>
+		<h1>Mi perfil</h1>
+
+		<form action="~/Home/MiPerfil">
+			
+			<label>Nombre del alumno:</label>
+			<input type="text" name="nombre"/> <br />
+			<label>Semestre:</label>
+			<input type="number" min="1" name="semestre" max=9 /> <br />
+			<label>Periodo:</label>
+			<input type="text" name="periodo" /> <br />
+			<label>Materia:</label>
+			<select name="materias">
+				<option>Programación web</option>
+				<option>Redes inalabricas</option>
+				<option>Inteligencia artificial</option>
+			</select> <br />
+			<input type="submit" value="Enviar datos" />
+		
+		</form>
+	</body>
+</html>
+
